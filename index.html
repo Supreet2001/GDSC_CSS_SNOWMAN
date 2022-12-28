@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+    .outer{
+        height: 100vh;
+        width: 100%;
+    }
+    nav{
+        height: 10%;
+        background-color: #232F3E;
+        color:white;
+    }
+    .flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main{
+        height: 90%;
+        color:yellow;
+        width: 100%;
+    }
+    .container{
+        background-color: #ac474b;
+        width: 60%;
+        height: 80%;
+
+    }
+    .black-strip{
+        width: 80px;
+        height: 30px;
+        background-color: #0d1f2b;
+        z-index: 3;
+
+    }
+    .white-strip{
+        width: 80px;
+        height: 20px;
+        background-color: #fff;
+        z-index: 3;
+        
+
+
+    }
+    .black-thin-strip{
+        width: 150px;
+        height: 11px;
+        background-color: #0d1f2b;
+        z-index: 3;
+
+    }
+    .column{
+        flex-direction: column;
+    }
+    .head{
+        width: 101px;
+        height: 101px;
+        border-radius: 50%;
+        background-color: #fff;
+        margin-top: -16px;
+
+    }
+   
+    .eyes{
+        width: 56px;
+        justify-content: space-around;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .eye{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #0d1f2b;
+        
+    }
+    .body{
+        width: 187px;
+        height: 187px;
+        border-radius: 50%;
+        background-color: #fff;
+        margin-top: -20px;
+
+    }
+    .neck{
+        z-index: 5;
+        background-color: #ac474b;
+        padding: 7px 20px;
+        margin-top: -20px;
+    }
+   .cloth{
+    width: 101px;
+    height: 17px;
+    background-color: #ffa440;
+    border-radius: 10px;
+   }
+   @media (max-width:800px) {
+        .snowman{
+            /* background-color: red; */
+            transform: scale(0.5);
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <nav class="flex">
+            <h1>Q2) SNOWMAN</h1>
+        </nav>
+        <main class="flex">
+            <div class="container flex">
+                <div class="snowman">
+
+                    <div class="hat flex column">
+                        <div class="black-strip"></div>
+                        <div class="white-strip"></div>
+                        <div class="black-strip"></div>
+                        <div class="black-thin-strip"></div>
+                    </div>
+                    <div class="lower flex column">
+                        <div class="head">
+                            <div class="flex eyes">
+                                <div class="eye"></div>
+                                <div class="eye"></div>
+                            </div>
+                        </div>
+                        <div class="neck">
+                            <div class="cloth"></div>
+                        </div>
+                        <div class="body"></div>
+                    </div>
+
+                </div>
+               
+            </div>
+        </main>
+    </div>
+</body>
+</html>
